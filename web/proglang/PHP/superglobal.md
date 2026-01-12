@@ -6,9 +6,9 @@ Superglobals = Always accessiable, regardless of scope.
 
 | Superglobals | Meaning | Note |
 | ------------ | ------- | ---- | 
-|`$GLOBALS`| array contains ref to global script variables | `$GLOBALS['x']`, global $x |
-|`$_SERVER`| info about web server (headers, paths, script locations) | $_SERVER['HTTP_HOST'] |
-|`$_REQUEST`| array contains data from `$_GET`, `$_POST`, `$_COOKIE` superglobals |
+|`$GLOBALS`| array contains ref to global script variables | `$GLOBALS['x']`, `global $x` |
+|`$_SERVER`| info about web server (headers, paths, script locations) | `$_SERVER['HTTP_HOST']` |
+|`$_REQUEST`| array contains data from `$_GET`, `$_POST`, `$_COOKIE` superglobals |  |
 |`$_POST`| array of variables received via the HTTP POST method |
 |`$_GET`| array of variables received via the HTTP GET method |
 |`$_FILES`| array of items uploaded to the current script via HTTP POST method (filename, type, size) |
@@ -19,6 +19,7 @@ Superglobals = Always accessiable, regardless of scope.
 ## $_SERVER
 
 | Element | Description |
+| ------------ | ------- |
 | `$_SERVER['PHP_SELF']` | Returns the filename of the currently executing script |
 | `$_SERVER['GATEWAY_INTERFACE']` | Returns the version of the Common Gateway Interface (CGI) the server is using |
 | `$_SERVER['SERVER_ADDR']` | Returns the IP address of the host server |
